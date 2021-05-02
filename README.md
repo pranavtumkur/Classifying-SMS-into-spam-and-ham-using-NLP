@@ -42,12 +42,14 @@ Since there are so many messages, we can expect a lot of zero counts for the pre
  We'll do that in three steps using the [bag-of-words](http://en.wikipedia.org/wiki/Bag-of-words_model) model. We'll do that in three steps using the bag-of-words model:
 
 - **Vectorization** - We'll convert the lemmas above, into vectors that machine learning models can understand
-  - Create a 'Bag of Words' model, where each unique word in a text will be represented by one number
-  - Fit our bag of words' sparse matrix to the Tf-Idf Transformer
--  **Weighting and Normalization**
-  - Transform the entire bag-of-words corpus into TF-IDF corpus
-  - Weigh the counts, so that frequent tokens get lower weight (inverse document frequency) using TF-IDF (*term frequency-inverse document frequency*)
-  - Normalize the vectors to unit length, to abstract from the original text length (L2 norm)
+ - Create a 'Bag of Words' model, where each unique word in a text will be represented by one number
+ - Fit our bag of words' sparse matrix to the Tf-Idf Transformer
+
+
+- **Weighting and Normalization**
+ - Transform the entire bag-of-words corpus into TF-IDF corpus
+ - Weigh the counts, so that frequent tokens get lower weight (inverse document frequency) using TF-IDF (*term frequency-inverse document frequency*)
+ - Normalize the vectors to unit length, to abstract from the original text length (L2 norm)
 
 ### 5. Training a model
 
