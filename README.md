@@ -37,13 +37,17 @@ For example:
 
 Since there are so many messages, we can expect a lot of zero counts for the presence of that word in that document. Therefore to save on memory and processing speed, we use a **Sparse Matrix** to store our 'Bag of Words' model. For this model, the sparsity is 0.079, i.e **7.9%** of the values in the matrix are non-zero.
 
-### 4. Vectorization
+### 4. Data Transformation
 
-We'll convert the lemmas above, into vectors that machine learning models can understand. We'll do that in three steps using the [bag-of-words](http://en.wikipedia.org/wiki/Bag-of-words_model) model. We'll do that in three steps using the bag-of-words model:
+ We'll do that in three steps using the [bag-of-words](http://en.wikipedia.org/wiki/Bag-of-words_model) model. We'll do that in three steps using the bag-of-words model:
 
-- Count how many times does a word occur in each message (Known as term frequency)
-- Weigh the counts, so that frequent tokens get lower weight (inverse document frequency) using TF-IDF (*term frequency-inverse document frequency*)
-- Normalize the vectors to unit length, to abstract from the original text length (L2 norm)
+- **Vectorization** - We'll convert the lemmas above, into vectors that machine learning models can understand
+  - Create a 'Bag of Words' model, where each unique word in a text will be represented by one number
+  - Fit our bag of words' sparse matrix to the Tf-Idf Transformer
+-  **Weighting and Normalization**
+  - Transform the entire bag-of-words corpus into TF-IDF corpus
+  - Weigh the counts, so that frequent tokens get lower weight (inverse document frequency) using TF-IDF (*term frequency-inverse document frequency*)
+  - Normalize the vectors to unit length, to abstract from the original text length (L2 norm)
 
 ### 5. Training a model
 
