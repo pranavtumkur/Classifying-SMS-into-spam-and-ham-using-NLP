@@ -49,4 +49,4 @@ We'll convert the lemmas above, into vectors that machine learning models can un
 
 With the pre-processing and the vectorization, we can actually use almost any sort of classification algorithms. For a [variety of reasons](http://www.inf.ed.ac.uk/teaching/courses/inf2b/learnnotes/inf2b-learn-note07-2up.pdf), the Naive Bayes classifier algorithm is a good choice.
 
-**Evaluating this trained model comparing the training datasets, actual values, we get an accuracy of 96% which is a good enough accuracy for text SMS classification!**
+## **Evaluating this trained model comparing the training datasets, actual values, we get an accuracy of 96% which is a good enough accuracy for text SMS classification!**
