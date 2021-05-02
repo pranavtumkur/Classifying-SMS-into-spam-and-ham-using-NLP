@@ -35,7 +35,7 @@ For example:
 </tr>
 </table>
 
-Since there are so many messages, we can expect a lot of zero counts for the presence of that word in that document. Because of this, SciKit Learn will output a Sparse Matrix. In our model the sparsity is 0.079, i.e only **7.9%** of the values in the matrix are non-zero.
+Since there are so many messages, we can expect a lot of zero counts for the presence of that word in that document. Therefore to save on memory and processing speed, we use a **Sparse Matrix** to store our 'Bag of Words' model. For this model, the sparsity is 0.079, i.e **7.9%** of the values in the matrix are non-zero.
 
 ### 4. Vectorization
 
